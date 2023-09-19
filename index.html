@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linked External CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculator||By Shubham</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>calculator</h1>
+      <div class="display">
+        <input type="text" id="display" readonly placeholder="00000000" />
+      </div>
+      <div class="box">
+        <div class="box1">
+          <button onclick="display(`1`)" value="1">1</button>
+          <button onclick="display(`2`)" value="2">2</button>
+          <button onclick="display(`3`)" value="3">3</button>
+          <button onclick="display(`+`)" value="+">+</button>
+        </div>
+        <div class="box1">
+          <button onclick="display(`4`)" value="4">4</button>
+          <button onclick="display(`5`)" value="5">5</button>
+          <button onclick="display(`6`)" value="6">6</button>
+          <button onclick="display(`-`)" value="-">-</button>
+        </div>
+        <div class="box1">
+          <button onclick="display(`7`)" value="7">7</button>
+          <button onclick="display(`8`)" value="8">8</button>
+          <button onclick="display(`9`)" value="9">9</button>
+          <button onclick="display(`*`)" value="*">*</button>
+        </div>
+        <div class="box1">
+          <button onclick="display(`/`)" value="/">/</button>
+          <button onclick="display(`0`)" value="0">0</button>
+          <button onclick="display(`.`)" value=".">.</button>
+          <button onclick="solve()" value="=">=</button>
+        </div>
+      </div>
+      <div class="clear">
+        <button onclick="clr()" value="c">clear All</button>
+      </div>
+    </div>
+    <!-- Linked External JS -->
+    <script src="./index.js"></script>
+  </body>
+</html>
